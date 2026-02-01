@@ -6,10 +6,7 @@
 This repository contains a small, **toy** implementation to reproduce (qualitatively) the type of numerical experiments reported in **Long & Sedghi (ICLR 2020)**, using the spectral/operator norm computation technique from **Sedghi et al. (ICLR 2019)**.
 
 The goal is to study, on a lightweight setup:
-- the **distance to initialization**  
-  $
-  \|K-K_0\|_{\sigma} \;\stackrel{\mathrm{def}}{=}\; \sum_{i=1}^{L}\left\|\operatorname{op}(K^{(i)}) - \operatorname{op}(K_0^{(i)})\right\|_2
-  $
+- the **distance to initialization** noted `||K - K0||_sigma`
 - the **generalization gap** (here defined as \(|\text{train\_err} - \text{test\_err}|\))
 - how these quantities vary with the number of parameters \(W\), and with \(W \cdot \|K-K_0\|_{\sigma}\).
 
