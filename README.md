@@ -28,10 +28,10 @@ The goal is to study, on a lightweight setup:
 
 - `TDL_long_sedghi_iclr_2020_num_exp.ipynb`  
   A self-contained notebook that:
-  1. imports dependencies
-  2. implements the Sedghi et al. (2019) FFT-based algorithm to compute convolutional operator norms
-  3. defines a **small toy CNN** and runs a width sweep
-  4. produces plots for:
+
+  1. implements the Sedghi et al. (2019) FFT-based algorithm to compute convolutional operator norms
+  2. defines a **small toy CNN** and runs a width sweep
+  3. produces plots for:
      - \(\|K-K_0\|_{\sigma}\) vs \(W\)
      - generalization gap vs \(W\)
      - generalization gap vs \(W\cdot\|K-K_0\|_{\sigma}\)
