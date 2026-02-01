@@ -54,10 +54,10 @@ The goal is to study, on a lightweight setup:
 - Sweep widths: `[1, 2, 4, 8, 16]`
 - Training: SGD (`lr=0.01`, `momentum=0.9`) for **5 epochs**
 - Metrics:
-  - \(W\): total parameter count
-  - \(\|K-K_0\|_{\sigma}\): distance to init
+  - `W`: total parameter count
+  - `||K - K0||_sigma`: distance to init
   - generalization gap: `abs(train_err - test_err)`
-  - \(W\cdot\|K-K_0\|_{\sigma}\)
+  - `W`*`||K - K0||_sigma`
 
 ### 3) Visualization
 Three figures are generated:
