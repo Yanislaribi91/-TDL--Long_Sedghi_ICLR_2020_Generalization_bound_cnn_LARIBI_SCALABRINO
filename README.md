@@ -7,9 +7,8 @@ This repository contains a small, **toy** implementation to reproduce (qualitati
 
 The goal is to study, on a lightweight setup:
 - the **distance to initialization** noted `||K - K0||_sigma`
-- the **generalization gap** (here defined as \(|\text{train\_err} - \text{test\_err}|\))
-- how these quantities vary with the number of parameters \(W\), and with \(W \cdot \|K-K_0\|_{\sigma}\).
-
+- the **generalization gap**, defined here as `abs(train_err - test_err)`
+- how these quantities vary with the number of parameters `W`, and with `W * ||K - K0||_sigma`.
 ---
 
 ## References
@@ -29,9 +28,9 @@ The goal is to study, on a lightweight setup:
   1. implements the Sedghi et al. (2019) FFT-based algorithm to compute convolutional operator norms
   2. defines a **small toy CNN** and runs a width sweep
   3. produces plots for:
-     - \(\|K-K_0\|_{\sigma}\) vs \(W\)
-     - generalization gap vs \(W\)
-     - generalization gap vs \(W\cdot\|K-K_0\|_{\sigma}\)
+     - `||K - K0||_sigma` vs `W`
+     - generalization gap vs `W`
+     - generalization gap vs `W * ||K - K0||_sigma`
 
 ---
 
@@ -62,9 +61,9 @@ The goal is to study, on a lightweight setup:
 
 ### 4) Visualization
 Three figures are generated:
-1. \(\|K-K_0\|_{\sigma}\) vs \(W\)
-2. generalization gap vs \(W\)
-3. generalization gap vs \(W\cdot\|K-K_0\|_{\sigma}\)
+1.  `||K - K0||_sigma` vs `W`
+2.  generalization gap vs `W`
+3. generalization gap vs `W * ||K - K0||_sigma`
 
 
 
