@@ -16,7 +16,7 @@ The goal is to study, on a lightweight setup:
 - **Sedghi, Gupta, Long (ICLR 2019)** — *The Singular Values of Convolutional Layers*  
   https://arxiv.org/abs/1805.10408
 - **Long & Sedghi (ICLR 2020)** — *On the Effect of the Activation Function on the Spectral Bias of Neural Networks* (and related experiments section)  
-  (see the paper for the full experimental protocol; this repo focuses on a toy reproduction)
+   https://arxiv.org/abs/1905.12600
 
 ---
 
