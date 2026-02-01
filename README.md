@@ -34,9 +34,9 @@ The goal is to study, on a lightweight setup:
 
 ---
 
-## Notebook structure (quick overview)
+## Notebook structure 
 
-### 2) Sedghi et al. (2019) operator norm
+### 1) Sedghi et al. (2019) operator norm
 - `compute_spectral_norm_sedghi(conv_layer, input_spatial_shape)`  
   Computes the spectral norm of the convolution operator using:
   - kernel padding to the input spatial size
@@ -47,7 +47,7 @@ The goal is to study, on a lightweight setup:
 - `compute_distance_from_init(model, initial_model, input_shape)`  
   Iterates over convolution layers, forms the difference of kernels, and sums the corresponding operator norms.
 
-### 3) Model + experiment loop
+### 2) Model + experiment loop
 - `SimpleCNN(width_scale)`  
   A **3-conv** toy CNN (with pooling) for faster runs.
 - Dataset: **FashionMNIST**, with a train subset of **5000** samples (for speed)
@@ -59,7 +59,7 @@ The goal is to study, on a lightweight setup:
   - generalization gap: `abs(train_err - test_err)`
   - \(W\cdot\|K-K_0\|_{\sigma}\)
 
-### 4) Visualization
+### 3) Visualization
 Three figures are generated:
 1.  `||K - K0||_sigma` vs `W`
 2.  generalization gap vs `W`
